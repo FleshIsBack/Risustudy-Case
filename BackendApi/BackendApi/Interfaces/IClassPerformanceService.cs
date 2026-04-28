@@ -1,6 +1,9 @@
-﻿namespace BackendApi.Interfaces
+﻿using BackendApi.DTO;
+
+namespace BackendApi.Interfaces
 {
-    public class IClassPerformanceService
+    public interface IClassPerformanceService
     {
+        ClassPerformanceDto GetClassPerformance(Guid classId);
     }
 }

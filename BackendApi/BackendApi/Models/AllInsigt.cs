@@ -9,7 +9,6 @@
         public List<Topic> StrongTopics { get; set; } = new();
         public LearningTrend Trend { get; set; }
         public DateTime GeneratedAt { get; set; }
-
     }
     public enum LearningTrend
     {

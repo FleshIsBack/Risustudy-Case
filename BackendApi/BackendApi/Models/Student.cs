@@ -2,9 +2,9 @@
 {
     public class Student
     {
-        public Guid id { get; set; }
-        public string Name { get; set; }
-        StudentStatus Status { get; set; }
+        public Guid Id { get; set; }
+        public required string Name { get; set; }
+        public StudentStatus Status { get; set; }
         public int progressPercentage { get; set; }
         public Guid ClassId { get; set; }
     }
