@@ -16,9 +16,12 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:3000")
-              .AllowAnyHeader()
-              .AllowAnyMethod();
+        policy.WithOrigins(
+            "http://localhost:3000",
+            "https://risustudy-case-t8c1.vercel.app/"
+        )
+        .AllowAnyHeader()
+        .AllowAnyMethod();
     });
 });
 var app = builder.Build();
@@ -29,7 +32,7 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-
+https://risustudy-case-t8c1.vercel.app/
 app.UseAuthorization();
 
 app.MapControllers();

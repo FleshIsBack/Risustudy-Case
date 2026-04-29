@@ -4,7 +4,7 @@ import { ClassPerformanceData } from "../models/ClassPerformance";
 import { Recommendation } from "../models/Recommendation";
 import { StudentInsight } from "../models/StudentInsight";
 
-const API_BASE_URL = 'http://localhost:5090';
+const API_BASE_URL = 'https://backendapi20260429202502-a6g9a9fga0g4aygs.canadacentral-01.azurewebsites.net';
 
 class ApiError extends Error {
     constructor(public status: number, message: string) {
