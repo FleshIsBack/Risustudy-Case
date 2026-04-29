@@ -100,11 +100,50 @@ namespace BackendApi.Data
                 }
             },
             {
+                Guid.Parse("00000000-0000-0000-0000-000000000002"),
+                new AllInsigt
+                {
+                    Id = Guid.NewGuid(),
+                    StudentId = Guid.Parse("00000000-0000-0000-0000-000000000002"),
+                    Analysis = "Sophia shows fundamental understanding but struggles with multi-step problems. Recommend breaking complex tasks into smaller chunks and providing more scaffolding.",
+                    WeakTopics = Topics.Where(t => t.Name is "Division" or "Problem Solving" or "Pattern Recognition").ToList(),
+                    StrongTopics = Topics.Where(t => t.Name is "Addition").ToList(),
+                    Trend = LearningTrend.Declining,
+                    GeneratedAt = DateTime.UtcNow.AddHours(-1)
+                }
+            },
+            {
                 Guid.Parse("00000000-0000-0000-0000-000000000003"),
                 new AllInsigt
                 {
                     Id = Guid.NewGuid(),
                     StudentId = Guid.Parse("00000000-0000-0000-0000-000000000003"),
+                    Analysis = "Sophia shows fundamental understanding but struggles with multi-step problems. Recommend breaking complex tasks into smaller chunks and providing more scaffolding.",
+                    WeakTopics = Topics.Where(t => t.Name is "Division" or "Problem Solving" or "Pattern Recognition").ToList(),
+                    StrongTopics = Topics.Where(t => t.Name is "Addition").ToList(),
+                    Trend = LearningTrend.Declining,
+                    GeneratedAt = DateTime.UtcNow.AddHours(-1)
+                }
+            },
+             {
+                Guid.Parse("00000000-0000-0000-0000-000000000004"),
+                new AllInsigt
+                {
+                    Id = Guid.NewGuid(),
+                    StudentId = Guid.Parse("00000000-0000-0000-0000-000000000004"),
+                    Analysis = "Sophia shows fundamental understanding but struggles with multi-step problems. Recommend breaking complex tasks into smaller chunks and providing more scaffolding.",
+                    WeakTopics = Topics.Where(t => t.Name is "Division" or "Problem Solving" or "Pattern Recognition").ToList(),
+                    StrongTopics = Topics.Where(t => t.Name is "Addition").ToList(),
+                    Trend = LearningTrend.Declining,
+                    GeneratedAt = DateTime.UtcNow.AddHours(-1)
+                }
+            },
+             {
+                Guid.Parse("00000000-0000-0000-0000-000000000005"),
+                new AllInsigt
+                {
+                    Id = Guid.NewGuid(),
+                    StudentId = Guid.Parse("00000000-0000-0000-0000-000000000005"),
                     Analysis = "Sophia shows fundamental understanding but struggles with multi-step problems. Recommend breaking complex tasks into smaller chunks and providing more scaffolding.",
                     WeakTopics = Topics.Where(t => t.Name is "Division" or "Problem Solving" or "Pattern Recognition").ToList(),
                     StrongTopics = Topics.Where(t => t.Name is "Addition").ToList(),

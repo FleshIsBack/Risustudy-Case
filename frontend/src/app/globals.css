@@ -2,12 +2,17 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #e8f9f9;
+  --highlightButton: #2b9195;
+  --grayoffsetColor: #f6f6f6;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-highlightButton: var(--highlightButton);
+  --color-grayoffsetColor: var(--grayoffsetColor);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -22,5 +27,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  color: var(--highlightButton);
+  color: var(--grayoffsetColor);
+
   font-family: Arial, Helvetica, sans-serif;
 }
